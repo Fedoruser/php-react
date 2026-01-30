@@ -24,7 +24,7 @@
       font-size: 1.25rem;
       line-height: 1.8;
       color: #222;
-      white-space: pre-wrap; // Чтобы сохранялись переносы строк из БД
+      white-space: pre-wrap;
     }
   }
 
@@ -43,6 +43,6 @@
   .center {
     display: flex;
     justify-content: center;
-    padding: 100px;
+    align-items: center;
   }
 }

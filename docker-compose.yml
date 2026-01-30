@@ -25,6 +25,22 @@ services:
       - backend
     networks:
       - app
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: react-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:8080/api
+    depends_on:
+      - nginx
+    networks:
+      - app
 
   mysql:
     image: mysql:8.0

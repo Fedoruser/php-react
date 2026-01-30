@@ -8,7 +8,11 @@ export const MainLayout = () => {
   return (
     <Layout>
       <Header className={styles.header}>
-        <div className={styles.logo}>POLIS.BLOG</div>
+        <div className={styles.logo}>
+          <Link to="/" className={styles.createLink}>
+            BLOG
+          </Link>
+        </div>
         <div className={styles.headerRight}>
           <Link to="/create" className={styles.createLink}>
             + СОЗДАТЬ ПОСТ
