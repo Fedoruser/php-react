@@ -1,0 +1,35 @@
+.card {
+  border: 1px solid #000 !important;
+  border-radius: 0 !important; // Жесткие углы
+  transition: all 0.3s ease;
+  height: 100%;
+
+  &:hover {
+    background-color: #000 !important;
+    .title,
+    .date,
+    .excerpt,
+    .footer {
+      color: #fff !important;
+    }
+  }
+
+  .date {
+    font-size: 12px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .title {
+    margin-top: 0 !important;
+    font-weight: 800 !important;
+  }
+
+  .footer {
+    margin-top: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}

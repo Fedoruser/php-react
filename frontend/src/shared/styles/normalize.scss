@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box; // Чтобы padding не раздувал блоки
+}
+
+/* Убираем внешние и внутренние отступы у всех элементов по умолчанию */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* Делаем прокрутку плавной */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%; /* Запрет изменения размера шрифта при повороте в iOS */
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  -webkit-font-smoothing: antialiased; /* Делает шрифты более тонкими и чистыми */
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Убираем стандартные маркеры списков */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для полей ввода */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Делаем ссылки аккуратными */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Настройка для кнопок (убираем дефолты) */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Чтобы футер всегда был внизу, если контента мало */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

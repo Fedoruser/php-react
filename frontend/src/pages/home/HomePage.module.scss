@@ -1,0 +1,28 @@
+.root {
+  .header {
+    margin-bottom: 48px;
+    border-left: 8px solid #000;
+    padding-left: 24px;
+
+    .title {
+      font-size: 3rem !important;
+      font-weight: 900 !important;
+      margin: 0 !important;
+      text-transform: uppercase;
+      letter-spacing: -2px;
+    }
+
+    .subtitle {
+      font-size: 1.1rem;
+      color: #666;
+      text-transform: lowercase;
+      font-style: italic;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .root .header .title {
+    font-size: 2rem !important;
+  }
+}
